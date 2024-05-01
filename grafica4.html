@@ -10,7 +10,7 @@
 <body>
 <div class="ct-chart ct-minor-seventh"></div>
 <script>
-// Configuracion de datos
+
 var datos = {
 labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
 series: [
@@ -22,9 +22,7 @@ series: [
 // Configuracion de opciones
 var opciones = {
 fullWidth: true,
-// Dentro de las opciones de la serie,
-// se puede usar los nombres de la serie para especificar
-// la configuración que solo se usará en la serie específica
+
 series: {
 'serie-1': {
 lineSmooth: Chartist.Interpolation.step()
@@ -39,9 +37,7 @@ showPoint: false
 }
 }
 };
-// Configuracion del objeto con opciones responsivas
-// ¡Incluso puedes usar modificaciones de configuración
-// responsivas para personalizar aún más la configuración de tus series!
+
 var opcionesResponsive = [
 ['screen and (max-width: 640px)', {
 series:{
